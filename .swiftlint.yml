@@ -1,0 +1,10 @@
+disabled_rules:
+  - line_length
+  - trailing_whitespace
+opt_in_rules:
+  - empty_count
+  - force_unwrapping
+  - explicit_init
+excluded:
+  - .build
+  - DerivedData

@@ -1,0 +1,21 @@
+# AirLLM Inference Service Dependencies
+# Production-pinned for Ollivo macOS / Linux / Windows local AI deployment
+
+airllm==4.0.0
+torch>=2.2.0
+transformers>=4.40.0
+accelerate>=0.28.0
+safetensors>=0.4.0
+sentencepiece>=0.2.0
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.6.0
+sse-starlette>=2.0.0
+psutil>=5.9.0
+huggingface-hub>=0.20.0
+requests>=2.31.0
+pytest>=8.0.0
+
+# Apple Silicon hardware acceleration for macOS
+mlx>=0.10.0; sys_platform == 'darwin' and platform_machine == 'arm64'
+mlx-lm>=0.10.0; sys_platform == 'darwin' and platform_machine == 'arm64'

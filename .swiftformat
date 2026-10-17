@@ -1,0 +1,5 @@
+--indent 4
+--swiftversion 6.0
+--stripunusedargs closure-only
+--header strip
+--exclude .build,DerivedData
